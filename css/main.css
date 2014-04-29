@@ -1,0 +1,49 @@
+html {
+    text-align: center;
+}
+body {
+    font-family: Droid Serif, Helvetica, Serif;
+    margin: auto;
+    text-align: left;
+}
+
+header {
+    padding: 3em;
+    margin-bottom: 3em;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #71B4C7;
+    color: #ffffff;
+}
+
+footer {
+    padding: 1.5em;
+    margin-top: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+h1 span {
+    text-shadow: 0 0 8px #E9AF5B;
+    color: #FFE8C9;
+}
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+}
+
+header > img {
+    float: right;
+    width: 250px;
+    margin-top: -50px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
