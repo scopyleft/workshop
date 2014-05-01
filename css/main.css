@@ -2,14 +2,16 @@ html {
     text-align: center;
 }
 body {
-    font-family: Droid Serif, Helvetica, Serif;
+    font-family: Ubuntu, Helvetica, Serif;
     margin: auto;
     text-align: left;
+    color: #42717C;
 }
 
 header {
     padding: 3em;
     margin-bottom: 3em;
+    border-bottom: 3px solid #609EAF;
 }
 
 header, footer {
@@ -34,7 +36,18 @@ h1, h2 {
     margin: 0;
 }
 
-h2 {
+h3 {
+    border-bottom: 1px solid #548B99;
+}
+h4 {
+    margin: 1em 0 0 0;
+    font-size: 1em;
+}
+p {
+    margin: .5em 0;
+}
+a {
+    color: #C45092;
 }
 
 header > img {
@@ -46,4 +59,12 @@ header > img {
 main {
     max-width: 800px;
     margin: auto;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+    background-color: #f6f6f6;
+    padding: 2em 1em;
+    border: 1px dotted #ccc;
 }
