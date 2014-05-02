@@ -34,6 +34,7 @@ h1 span {
 }
 h1, h2 {
     margin: 0;
+    text-shadow: 2px 0 #71B4C7, -2px 0 #71B4C7, 0 2px #71B4C7, 0 -2px #71B4C7;
 }
 
 h3 {
@@ -52,7 +53,7 @@ a {
 
 header > img {
     float: right;
-    width: 250px;
+    width: 220px;
     margin-top: -50px;
 }
 
