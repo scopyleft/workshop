@@ -2,16 +2,19 @@ html {
     text-align: center;
 }
 body {
-    font-family: Ubuntu, Helvetica, Serif;
     margin: auto;
     text-align: left;
     color: #42717C;
+    font-family: 'Playfair Display', Helvetica, Serif;
 }
 
 header {
-    padding: 3em;
+    position: relative;
+    font-family: Lobster, Helvetica, Serif;
+    padding: 2.5em 2em 0 2em;
     margin-bottom: 3em;
     border-bottom: 3px solid #609EAF;
+    text-shadow: 2px 0 #71B4C7, -2px 0 #71B4C7, 0 2px #71B4C7, 0 -2px #71B4C7;
 }
 
 header, footer {
@@ -20,9 +23,35 @@ header, footer {
     color: #ffffff;
 }
 
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+nav li {
+    display: inline-block;
+}
+nav li a {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: 1.2em;
+    margin: 0 .3em;
+    padding: 0 .3em;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+nav li:not(:last-child):after {
+    content: "•";
+    font-size: 1.5em;
+}
+
 footer {
     padding: 1.5em;
     margin-top: 1.5em;
+}
+footer a {
+    color: #fff;
 }
 
 h1 {
@@ -34,11 +63,14 @@ h1 span {
 }
 h1, h2 {
     margin: 0;
-    text-shadow: 2px 0 #71B4C7, -2px 0 #71B4C7, 0 2px #71B4C7, 0 -2px #71B4C7;
 }
 
 h3 {
     border-bottom: 1px solid #548B99;
+    font-family: Lobster, Helvetica, Serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
 }
 h4 {
     margin: 1em 0 0 0;
@@ -51,15 +83,14 @@ a {
     color: #C45092;
 }
 
-header > img {
-    float: right;
-    width: 220px;
-    margin-top: -50px;
+header img {
+    width: 120px;
 }
 
 main {
     max-width: 800px;
     margin: auto;
+    padding: 0 2em;
 }
 
 blockquote {

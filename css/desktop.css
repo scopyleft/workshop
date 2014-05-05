@@ -1,0 +1,17 @@
+header > div {
+    position: relative;
+    max-width: 990px;
+    margin: auto;
+}
+
+
+header img {
+    position: absolute;
+    width: 220px;
+    top: 50px;
+    right: 0px;
+}
+
+nav {
+    margin-top: 2em;
+}
