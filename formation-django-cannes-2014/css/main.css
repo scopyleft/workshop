@@ -87,6 +87,14 @@ header img {
     width: 120px;
 }
 
+h3 a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px dotted inherit;
+    line-height: 5px;
+}
+
 main {
     max-width: 800px;
     margin: auto;
