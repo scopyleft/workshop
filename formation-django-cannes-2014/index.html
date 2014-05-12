@@ -125,5 +125,13 @@
         </p>
     </footer>
 
+    <script type="text/javascript" charset="utf-8">
+        [].map.call(document.querySelectorAll('a'), function (a) {
+            if (a.getAttribute('href') .substr(0, 4) == 'http') {
+                a.setAttribute('target', '_blank');
+            }
+        });
+    </script>
+
 </body>
 </html>
