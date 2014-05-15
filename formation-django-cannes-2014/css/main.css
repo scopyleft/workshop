@@ -103,8 +103,8 @@ main {
 
 blockquote {
     font-style: italic;
-    margin: 0;
+    margin: 1em 0;
     background-color: #f6f6f6;
-    padding: 2em 1em;
+    padding: 0em 2em;
     border: 1px dotted #ccc;
 }
