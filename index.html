@@ -6,26 +6,6 @@
     <title>Formations scopyleft - Ateliers HTML5, Bonnes pratiques du Web, Python/Django, JavaScript, lean, meteor et agilité.</title>
     <link rel="stylesheet" type="text/css" href="http://scopyleft.fr/static/packed.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>
-        window.onload = function() {
-            document.forms[0].onsubmit = function(evt) {
-                var data = $(this).serializeArray();
-                $.ajax({
-                    url: this.action + "&callback=?",
-                    data: data,
-                    type: this.method,
-                    success: function(e) {
-                        dump(e);
-                    },
-                    error: function(e) {
-                        dump(e);
-                    }
-                });
-                evt.preventDefault();
-            }
-        }
-    </script>
 </head>
 
 <body>
