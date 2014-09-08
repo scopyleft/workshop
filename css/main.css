@@ -1,0 +1,27 @@
+input[type="text"],
+textarea {
+  border: 0;
+  font: inherit;
+  font-style: italic;
+}
+
+input[type="text"] {
+  border-bottom: 1px dotted #999;
+  height: 22px;
+  width: auto;
+  padding-left: 2px;
+}
+
+textarea {
+  border-left: 1px dotted #999;
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 5px 10px;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #999;
+  font: inherit;
+  cursor: pointer;
+}

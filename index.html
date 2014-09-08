@@ -1,6 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Ateliers et formations scopyleft - HTML, Web, Python / Django, Javascript, bonnes pratiques.</title>
-    <meta http-equiv="refresh" content="0;url=http://workshop.scopyleft.fr/formation-django-cannes-2014/"></head>
+    <meta charset="utf-8" />
+    <title>Formations scopyleft - Ateliers HTML5, Bonnes pratiques du Web, Python/Django, JavaScript, lean, meteor et agilité.</title>
+    <link rel="stylesheet" type="text/css" href="http://scopyleft.fr/static/packed.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        window.onload = function() {
+            document.forms[0].onsubmit = function(evt) {
+                var data = $(this).serializeArray();
+                $.ajax({
+                    url: this.action + "&callback=?",
+                    data: data,
+                    type: this.method,
+                    success: function(e) {
+                        dump(e);
+                    },
+                    error: function(e) {
+                        dump(e);
+                    }
+                });
+                evt.preventDefault();
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <blockquote>
+        <h1>Ateliers et formations by scopyleft</h1>
+        <p>
+            On souhaiterait vous accompagner pour monter en compétence.<br />
+            On <a href="" title="formations scopyleft">propose des formations</a>, et on aimerait en faire avec vous.<br />
+            Du coup, on vous demande votre avis.
+        </p>
+    </blockquote>
+
+    <form method="post" action="https://docs.google.com/a/scopyleft.fr/forms/d/1okhjXRda9nWPbQZv57XGnTDRYrCgC5vNSH4O-BNdvYg/formResponse">
+        <h2>Cher scopyleft,</h2>
+        <p>
+            Bientôt, j'aimerais apprendre à faire du <input type="text" name="entry.253611464" meta-name="topic" required="required" placeholder="jardinage" />.<br />
+            Ce serait génial si ca pouvait se passer près de <input type="text" name="entry.1959827034" meta-name="city" placeholder="ma ville" />.<br />
+            D'ailleurs, j'aimerais aussi vous dire que …<br />
+            <textarea name="entry.463134036" meta-name="comment" placeholder="ca me rendrait heureux."></textarea>
+        </p>
+        <p>
+            Merci de me tenir informé de la suite en me contactant sur <input type="text" name="entry.5859649" meta-name="contact" placeholder="you@plop.fr, @plopper" />.
+        </p>
+        <p>
+            Amicalement,
+        </p>
+        <input type="text" name="entry.17805701" meta-name="name" placeholder="Moi" />
+
+        <p>
+            <input type="submit" value="Envoyer ma suggestion" />
+        </p>
+    </form>
+
+    <h2></h2>
+
+    <h2>Événements passés</h2>
+    <ul>
+        <li>
+            Récemment une <a href="http://www.trampolean.fr/" title="Formation atelier Trampolean">formation sur Running Lean</a> s'est déroulée à Clapiers, avec Stéphane et Lionel.<br />
+            Il a eu un bon succès et sera réitéré.
+        </li>
+        <li>
+            À ce jour, un <a href="/formation-django-cannes-2014" title="Page de la formation Django">atelier de co-formation sur Django</a> a été proposé.<br />
+            C'était une première ouverture pour inviter à partager sur les sujets qui vous intéresse et sur lesquels ont pourrait
+            vous aider à monter en compétences.
+        </li>
+    </ul>
+
+</body>
+
 </html>
